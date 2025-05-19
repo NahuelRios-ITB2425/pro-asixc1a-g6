@@ -22,11 +22,11 @@ La solució proposada busca integrar els serveis web i de transmissió d'àudio 
 
 El projecte contribueix activament als següents Objectius de Desenvolupament Sostenible:
 
-- **ODS 7**: Energia assequible i no contaminant  
-- **ODS 9**: Indústria, innovació i infraestructura  
-- **ODS 12**: Producció i consum responsables  
-- **ODS 13**: Acció pel clima  
-- **ODS 16**: Pau, justícia i institucions sòlides
+- [**ODS 7**: Energia assequible i no contaminant](https://www.un.org/sustainabledevelopment/energy/)
+- [**ODS 9**: Indústria, innovació i infraestructura](https://www.un.org/sustainabledevelopment/infrastructure-industrialization/)
+- [**ODS 12**: Producció i consum responsables](https://www.un.org/sustainabledevelopment/sustainable-consumption-production/)
+- [**ODS 13**: Acció pel clima](https://www.un.org/sustainabledevelopment/climate-change/)
+- [**ODS 16**: Pau, justícia i institucions sòlides](https://www.un.org/sustainabledevelopment/peace-justice/)
 
 ---
 
