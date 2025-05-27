@@ -99,7 +99,7 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 
 # Càlcul Detallat de la Petjada de Carboni
 
-## 5.5.1 Metodologia de Càlcul d’Emissions
+## Metodologia de Càlcul d’Emissions
 
 ### Factors d'Emissió Aplicats (Fonts Verificades)
 
