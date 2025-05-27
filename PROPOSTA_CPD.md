@@ -20,6 +20,8 @@ Gràcies al clima fred del Canadà podrem utilitzar free cooling indirecte per a
 
 Al nostre CPD Innovate Tech implementem una infraestructura de cablejat estructurat classe empresarial basada en estàndards TIA-568-C amb arquitectura MDF + 2 IDFs (Nord i Sud) que garanteix redundància total N+1 mitjançant Cisco Nexus 9K.
 
+![Cablejat del CPD](./images/cpd.png)
+
 ### Infraestructura de Fibra Òptica
 
 El backbone de fibra òptica està compost per fibres OM4, OM5 i OS2, suportant enllaços de fins a 400G amb tecnologia DWDM en topologia d'anell per a màxima resistència:
