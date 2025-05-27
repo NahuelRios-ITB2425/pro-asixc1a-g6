@@ -60,3 +60,40 @@ Nota: Només s’utilitzaran com a **complement** de l’energia hidroelèctrica
 ## Sistemes de circulació d’aire que aprofitin condicions naturals
 
 El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofitar aquesta **refrigeració natural** mitjançant sistemes de circulació d’aire. Aquesta tècnica és coneguda com a **‘free cooling’**.
+
+# Consum Energètic de Plataformes de Streaming
+
+## Netflix
+
+- **Streaming:** ≈ 4,5 TWh  
+  - (300 M llars × 2 h/dia × 365 dies × 0,15 kWh/h)
+- **Centres de dades i CDN:** +1–2 TWh  
+- **Total:** **5–7 TWh**
+
+---
+
+## HBO Max (Max)
+
+- **Streaming:** ≈ 1,5–2 TWh  
+  - (100 M usuaris)
+- **Centres de dades i CDN:** +0,5–1 TWh  
+- **Total:** **2–3 TWh**
+
+---
+
+## Amazon Prime Video
+
+- **Streaming:** ≈ 3–4 TWh  
+  - (200 M usuaris)
+- **Centres de dades i CDN (AWS, PUE ≈ 1,1):** +1–2 TWh  
+- **Total:** **4–6 TWh**
+
+---
+
+## Innovate Tech
+
+- **Streaming:** ≈ 0,045 TWh (o 45.000 MWh)  
+  - (3 M usuaris)
+- **Consum CPD:** ≈ 131–175 MWh  
+- **Total:** **45.175 MWh** (o **0,045175 TWh**)
+
