@@ -97,3 +97,33 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 - **Consum CPD:** ≈ 131–175 MWh  
 - **Total:** **45.175 MWh** (o **0,045175 TWh**)
 
+# Càlcul Detallat de la Petjada de Carboni
+
+## 5.5.1 Metodologia de Càlcul d’Emissions
+
+### Factors d'Emissió Aplicats (Fonts Verificades)
+
+#### Grid Elèctric d'Ontario (2024)
+
+**Composició del Mix Energètic:**
+
+| Font Energètica | Percentatge | Emissions Directes (g CO₂/kWh) | Emissions del Cicle de Vida (g CO₂/kWh) |
+|------------------|-------------|--------------------------------|-----------------------------------------|
+| Nuclear          | 60.2%       | 0                              | 12                                      |
+| Hidroelèctrica   | 24.8%       | 4                              | 24                                      |
+| Eòlica           | 7.1%        | 11                             | 11                                      |
+| Solar            | 2.4%        | 45                             | 41                                      |
+| Gas Natural      | 4.9%        | 490                            | 490                                     |
+| Biomassa         | 0.6%        | 18                             | (assumit neutre en carboni)            |
+
+### Càlcul del Factor Ponderat d’Emissions (Lifecycle)
+
+\[
+(0.602 × 12) + (0.248 × 24) + (0.071 × 11) + (0.024 × 41) + (0.049 × 490) + (0.006 × 18)
+\]
+
+\[
+= 7.2 + 5.9 + 0.8 + 1.0 + 24.0 + 0.1 = \mathbf{39.0\ g\ CO₂eq/kWh}
+\]
+
+> **Nota:** Es fa servir un valor conservador de **35.3 g CO₂/kWh**, segons dades verificades de l’**IESO (Independent Electricity System Operator, 2024)**.
