@@ -127,3 +127,30 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 \]
 
 > **Nota:** Es fa servir un valor conservador de **35.3 g CO₂/kWh**, segons dades verificades de l’**IESO (Independent Electricity System Operator, 2024)**.
+
+# Resum Emissions Anuals
+
+## Petjada de Carboni Total
+
+| Tipus d’Emissió       | Emissions (t CO₂eq/any) |
+|------------------------|--------------------------|
+| **Scope 1** (directes) | 7.3                      |
+| **Scope 2** (electricitat) | 35.0                 |
+| **Scope 3** (indirectes) | 70.9                  |
+| **TOTAL**              | **113.2 t CO₂eq/any**    |
+
+---
+
+## Emissions per Usuari (Streaming)
+
+- **Total usuaris:** 50.000
+- **Petjada per usuari/any:**  
+  \[
+  \frac{113.2\ \text{t CO₂eq}}{50,000\ \text{usuaris}} = 2.26\ \text{kg CO₂eq/usuari/any}
+  \]
+
+- **Petjada per usuari/dia:**  
+  \[
+  \frac{2.26\ \text{kg}}{365\ \text{dies}} ≈ 6.2\ \text{g CO₂eq/usuari/dia}
+  \]
+
