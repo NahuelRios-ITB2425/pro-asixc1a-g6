@@ -18,7 +18,7 @@ Gràcies al clima fred del Canadà podrem utilitzar free cooling indirecte per a
 
 ## Cablejat Estructurat
 
-Al nostre CPD Ontario Streaming Platform implementem una infraestructura de cablejat estructurat classe empresarial basada en estàndards TIA-568-C amb arquitectura MDF + 2 IDFs (Nord i Sud) que garanteix redundància total N+1 mitjançant Cisco Nexus 9K.
+Al nostre CPD Innovate Tech implementem una infraestructura de cablejat estructurat classe empresarial basada en estàndards TIA-568-C amb arquitectura MDF + 2 IDFs (Nord i Sud) que garanteix redundància total N+1 mitjançant Cisco Nexus 9K.
 
 ### Infraestructura de Fibra Òptica
 
