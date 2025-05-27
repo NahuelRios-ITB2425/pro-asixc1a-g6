@@ -154,3 +154,44 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
   \frac{2.26\ \text{kg}}{365\ \text{dies}} ≈ 6.2\ \text{g CO₂eq/usuari/dia}
   \]
 
+# Proposta de Mesures de Reducció i Optimització
+
+## Composició Energètica per Franja Horària (Ontario, 2024)
+
+### 00:00 – 06:00 (Demanda baixa)
+
+- **Nuclear:** 68% (constant baseload)
+- **Hidroelèctrica:** 22% (regulated flow)
+- **Eòlica:** 8% (variable, pic nocturn)
+- **Gas Natural:** 2% (ús mínim per demanda)
+- **Factor mitjà d’emissió:** **22.1 g CO₂/kWh**
+
+---
+
+### 06:00 – 12:00 (Rampa matutina)
+
+- **Nuclear:** 58%
+- **Hidroelèctrica:** 25%
+- **Gas Natural:** 12% (peak matutí)
+- **Eòlica:** 5%
+- **Factor mitjà d’emissió:** **35.3 g CO₂/kWh**
+
+---
+
+### 12:00 – 18:00 (Demanda pic)
+
+- **Nuclear:** 52%
+- **Gas Natural:** 28% (major consum per pic)
+- **Hidroelèctrica:** 15%
+- **Eòlica:** 5%
+- **Factor mitjà d’emissió:** **45.7 g CO₂/kWh**
+
+---
+
+### 18:00 – 24:00 (Pic vespre)
+
+- **Nuclear:** 55%
+- **Gas Natural:** 25%
+- **Hidroelèctrica:** 18%
+- **Eòlica:** 2%
+- **Factor mitjà d’emissió:** **42.1 g CO₂/kWh**
