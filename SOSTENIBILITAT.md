@@ -89,11 +89,12 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 - **Total:** **4–6 TWh**
 
 ---
-## Càlcul del Consum Total i Factor d'Eficiència
 
-### Consums Energètics Verificats per Categoria
+# 4.2.1 Càlcul del Consum Total i Factor d'Eficiència
 
-#### **Càrrega IT**
+## Consums Energètics Verificats per Categoria
+
+### **Càrrega IT**
 
 | Component               | Potència Nominal         | Utilització Mitjana | Consum Real           | kWh/any    |
 |------------------------|--------------------------|----------------------|------------------------|------------|
@@ -141,7 +142,7 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 | **TOTAL CONSUM**       | **991,998**        |
 
 
-# Càlcul Detallat de la Petjada de Carboni
+# 4.2.2 Càlcul Detallat de la Petjada de Carboni
 
 ## Metodologia de Càlcul d’Emissions
 
@@ -174,7 +175,7 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 
 # Resum Emissions Anuals
 
-## 4.2 Petjada de Carboni Total
+## Petjada de Carboni Total
 
 | Tipus d’Emissió       | Emissions (t CO₂eq/any) |
 |------------------------|--------------------------|
@@ -198,7 +199,7 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
   \frac{2.26\ \text{kg}}{365\ \text{dies}} ≈ 6.2\ \text{g CO₂eq/usuari/dia}
   \]
 
-# Proposta de Mesures de Reducció i Optimització
+# 4.3 Proposta de Mesures de Reducció i Optimització
 
 ## Composició Energètica per Franja Horària (Ontario, 2024)
 
