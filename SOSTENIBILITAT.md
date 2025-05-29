@@ -90,6 +90,9 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 
 ---
 
+# 4.1 Petjada ecologica del CPD
+
+
 # 4.2.1 Càlcul del Consum Total i Factor d'Eficiència
 
 ## Consums Energètics Verificats per Categoria
