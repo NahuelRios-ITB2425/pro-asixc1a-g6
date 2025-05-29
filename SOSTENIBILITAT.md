@@ -89,7 +89,179 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 - **Total:** **4–6 TWh**
 
 ---
+## 5.3.3 Càlcul del Consum Total i Factor d'Eficiència
 
+### Consums Energètics Verificats per Categoria
+
+#### **Càrrega IT**
+
+| Component               | Potència Nominal         | Utilització Mitjana | Consum Real           | kWh/any    |
+|------------------------|--------------------------|----------------------|------------------------|------------|
+| Streaming Servers (8×) | 800W × 8                 | 85% factor de càrrega | 5.44kW × 8 = 43.5kW     | 381,060    |
+| Database Cluster (3×)  | 600W × 3                 | 70% factor de càrrega | 1.26kW × 3 = 3.78kW     | 33,113     |
+| Storage Systems        | 2.5kW total              | 80% factor de càrrega | 2.0kW                  | 17,520     |
+| Network Infrastructure | 15kW total               | 60% factor de càrrega | 9.0kW                  | 78,840     |
+| Web Frontend (6×)      | 350W × 6                 | 65% factor de càrrega | 1.37kW × 6 = 8.2kW      | 71,832     |
+| Monitoring & Services  | 8kW total                | 55% factor de càrrega | 4.4kW                  | 38,544     |
+| Altres sistemes IT     | 5kW total                | 70% factor de càrrega | 3.5kW                  | 30,660     |
+
+**Subtotal Càrrega IT:**
+
+- **Potència Nominal Total:** 108.8kW  
+- **Utilització Promig:** 74.2%  
+- **Consum Real Total:** 80.6kW  
+- **Consum Anual:** **705,654 kWh**
+
+---
+
+### **Sistemes de Suport i Infraestructura**
+
+| Sistema                | Especificació              | Consum Operatiu     | Eficiència             | kWh/any    |
+|------------------------|-----------------------------|----------------------|-------------------------|------------|
+| Climatització 3×PDX    | 30kW × 3 unitats            | 23.5kW (COP 4.2)     | 420% vs resistiu        | 205,860    |
+| Free Cooling           | 4,200h operatives           | 5kW ventiladors      | 4,200h @ 5kW            | 21,000     |
+| Sistema UPS (2×)       | 250kVA × 2                  | 97.5% eficiència     | 2.5% pèrdues            | 18,166     |
+| PDUs + Gestió          | 24× intel·ligents           | 2.2kW monitoratge    | Smart switching         | 19,272     |
+| Il·luminació LED       | 500 lux disseny             | 1.3kW amb sensors    | Control de presència    | 6,278      |
+| Sistemes Auxiliars     | Diversos                    | 1.8kW promig         | Alta eficiència         | 15,768     |
+
+**Subtotal Infraestructura:**
+
+- **Consum Promig:** 36.3kW  
+- **Consum Anual:** **286,344 kWh**
+
+---
+
+### **Consolidació Energètica Anual**
+
+| Categoria              | Consum Anual (kWh) |
+|------------------------|--------------------|
+| **Càrrega IT Total**   | 705,654            |
+| **Sistemes Facilitat** | 286,344            |
+| **TOTAL CONSUM**       | **991,998**        |
+
+
+# Càlcul Detallat de la Petjada de Carboni
+
+## Metodologia de Càlcul d’Emissions
+
+### Factors d'Emissió Aplicats (Fonts Verificades)
+
+#### Grid Elèctric d'Ontario (2024)
+
+**Composició del Mix Energètic:**
+
+| Font Energètica | Percentatge | Emissions Directes (g CO₂/kWh) | Emissions del Cicle de Vida (g CO₂/kWh) |
+|------------------|-------------|--------------------------------|-----------------------------------------|
+| Nuclear          | 60.2%       | 0                              | 12                                      |
+| Hidroelèctrica   | 24.8%       | 4                              | 24                                      |
+| Eòlica           | 7.1%        | 11                             | 11                                      |
+| Solar            | 2.4%        | 45                             | 41                                      |
+| Gas Natural      | 4.9%        | 490                            | 490                                     |
+| Biomassa         | 0.6%        | 18                             | (assumit neutre en carboni)            |
+
+### Càlcul del Factor Ponderat d’Emissions (Lifecycle)
+
+\[
+(0.602 × 12) + (0.248 × 24) + (0.071 × 11) + (0.024 × 41) + (0.049 × 490) + (0.006 × 18)
+\]
+
+\[
+= 7.2 + 5.9 + 0.8 + 1.0 + 24.0 + 0.1 = \mathbf{39.0\ g\ CO₂eq/kWh}
+\]
+
+> **Nota:** Es fa servir un valor conservador de **35.3 g CO₂/kWh**, segons dades verificades de l’**IESO (Independent Electricity System Operator, 2024)**.
+
+# Resum Emissions Anuals
+
+## Petjada de Carboni Total
+
+| Tipus d’Emissió       | Emissions (t CO₂eq/any) |
+|------------------------|--------------------------|
+| **Scope 1** (directes) | 7.3                      |
+| **Scope 2** (electricitat) | 35.0                 |
+| **Scope 3** (indirectes) | 70.9                  |
+| **TOTAL**              | **113.2 t CO₂eq/any**    |
+
+---
+
+## Emissions per Usuari (Streaming)
+
+- **Total usuaris:** 50.000
+- **Petjada per usuari/any:**  
+  \[
+  \frac{113.2\ \text{t CO₂eq}}{50,000\ \text{usuaris}} = 2.26\ \text{kg CO₂eq/usuari/any}
+  \]
+
+- **Petjada per usuari/dia:**  
+  \[
+  \frac{2.26\ \text{kg}}{365\ \text{dies}} ≈ 6.2\ \text{g CO₂eq/usuari/dia}
+  \]
+
+# Proposta de Mesures de Reducció i Optimització
+
+## Composició Energètica per Franja Horària (Ontario, 2024)
+
+### 00:00 – 06:00 (Demanda baixa)
+
+- **Nuclear:** 68% (constant baseload)
+- **Hidroelèctrica:** 22% (regulated flow)
+- **Eòlica:** 8% (variable, pic nocturn)
+- **Gas Natural:** 2% (ús mínim per demanda)
+- **Factor mitjà d’emissió:** **22.1 g CO₂/kWh**
+
+---
+
+### 06:00 – 12:00 (Rampa matutina)
+
+- **Nuclear:** 58%
+- **Hidroelèctrica:** 25%
+- **Gas Natural:** 12% (peak matutí)
+- **Eòlica:** 5%
+- **Factor mitjà d’emissió:** **35.3 g CO₂/kWh**
+
+---
+
+### 12:00 – 18:00 (Demanda pic)
+
+- **Nuclear:** 52%
+- **Gas Natural:** 28% (major consum per pic)
+- **Hidroelèctrica:** 15%
+- **Eòlica:** 5%
+- **Factor mitjà d’emissió:** **45.7 g CO₂/kWh**
+
+---
+
+### 18:00 – 24:00 (Pic vespre)
+
+- **Nuclear:** 55%
+- **Gas Natural:** 25%
+- **Hidroelèctrica:** 18%
+- **Eòlica:** 2%
+- **Factor mitjà d’emissió:** **42.1 g CO₂/kWh**
+
+
+## Sistema d'Alimentació Ininterrompuda (SAI)
+
+### SAI PRINCIPAL REDUNDANT
+
+- **Model:** Vertiv Liebert APM 250kVA  
+- **Configuració:** 2 unitats (A+B alimentació dual)  
+- **Capacitat individual:** 250 kVA / 180 kW per unitat  
+- **Temps d'autonomia:** 136 minuts (2.3 hores) a càrrega real  
+- **Eficiència:** A++ (96.8% d'eficiència en mode VFI)  
+- **Eficiència ECO:** 99.2% (mode de màxima eficiència)  
+- **Bateries:** VRLA AGM segellades, vida útil de 10 anys  
+- **Monitoratge remot:** SNMP amb targeta Vertiv IntelliSlot  
+- **Configuració:** Repartiment de càrrega actiu-actiu  
+
+**Enllaç:** Vertiv Liebert APM 200kVA
+
+---
+
+### Càlcul detallat d'autonomia
+
+Amb una càrrega operativa de **98 kW**, el càlcul es fa amb la fórmula següent:
 
 **On:**
 
@@ -210,101 +382,3 @@ A 24°C → Autonomia corregida = `125.7 × 0.98` = **123.2 minuts**
 | Mode N+1    | 98 kW          | 1           | 98 kW        | 136 min (2.3 h)    |
 | Emergència* | 65 kW          | 1           | 65 kW        | 195 min (3.2 h)    |
 
-# Càlcul Detallat de la Petjada de Carboni
-
-## Metodologia de Càlcul d’Emissions
-
-### Factors d'Emissió Aplicats (Fonts Verificades)
-
-#### Grid Elèctric d'Ontario (2024)
-
-**Composició del Mix Energètic:**
-
-| Font Energètica | Percentatge | Emissions Directes (g CO₂/kWh) | Emissions del Cicle de Vida (g CO₂/kWh) |
-|------------------|-------------|--------------------------------|-----------------------------------------|
-| Nuclear          | 60.2%       | 0                              | 12                                      |
-| Hidroelèctrica   | 24.8%       | 4                              | 24                                      |
-| Eòlica           | 7.1%        | 11                             | 11                                      |
-| Solar            | 2.4%        | 45                             | 41                                      |
-| Gas Natural      | 4.9%        | 490                            | 490                                     |
-| Biomassa         | 0.6%        | 18                             | (assumit neutre en carboni)            |
-
-### Càlcul del Factor Ponderat d’Emissions (Lifecycle)
-
-\[
-(0.602 × 12) + (0.248 × 24) + (0.071 × 11) + (0.024 × 41) + (0.049 × 490) + (0.006 × 18)
-\]
-
-\[
-= 7.2 + 5.9 + 0.8 + 1.0 + 24.0 + 0.1 = \mathbf{39.0\ g\ CO₂eq/kWh}
-\]
-
-> **Nota:** Es fa servir un valor conservador de **35.3 g CO₂/kWh**, segons dades verificades de l’**IESO (Independent Electricity System Operator, 2024)**.
-
-# Resum Emissions Anuals
-
-## Petjada de Carboni Total
-
-| Tipus d’Emissió       | Emissions (t CO₂eq/any) |
-|------------------------|--------------------------|
-| **Scope 1** (directes) | 7.3                      |
-| **Scope 2** (electricitat) | 35.0                 |
-| **Scope 3** (indirectes) | 70.9                  |
-| **TOTAL**              | **113.2 t CO₂eq/any**    |
-
----
-
-## Emissions per Usuari (Streaming)
-
-- **Total usuaris:** 50.000
-- **Petjada per usuari/any:**  
-  \[
-  \frac{113.2\ \text{t CO₂eq}}{50,000\ \text{usuaris}} = 2.26\ \text{kg CO₂eq/usuari/any}
-  \]
-
-- **Petjada per usuari/dia:**  
-  \[
-  \frac{2.26\ \text{kg}}{365\ \text{dies}} ≈ 6.2\ \text{g CO₂eq/usuari/dia}
-  \]
-
-# Proposta de Mesures de Reducció i Optimització
-
-## Composició Energètica per Franja Horària (Ontario, 2024)
-
-### 00:00 – 06:00 (Demanda baixa)
-
-- **Nuclear:** 68% (constant baseload)
-- **Hidroelèctrica:** 22% (regulated flow)
-- **Eòlica:** 8% (variable, pic nocturn)
-- **Gas Natural:** 2% (ús mínim per demanda)
-- **Factor mitjà d’emissió:** **22.1 g CO₂/kWh**
-
----
-
-### 06:00 – 12:00 (Rampa matutina)
-
-- **Nuclear:** 58%
-- **Hidroelèctrica:** 25%
-- **Gas Natural:** 12% (peak matutí)
-- **Eòlica:** 5%
-- **Factor mitjà d’emissió:** **35.3 g CO₂/kWh**
-
----
-
-### 12:00 – 18:00 (Demanda pic)
-
-- **Nuclear:** 52%
-- **Gas Natural:** 28% (major consum per pic)
-- **Hidroelèctrica:** 15%
-- **Eòlica:** 5%
-- **Factor mitjà d’emissió:** **45.7 g CO₂/kWh**
-
----
-
-### 18:00 – 24:00 (Pic vespre)
-
-- **Nuclear:** 55%
-- **Gas Natural:** 25%
-- **Hidroelèctrica:** 18%
-- **Eòlica:** 2%
-- **Factor mitjà d’emissió:** **42.1 g CO₂/kWh**
