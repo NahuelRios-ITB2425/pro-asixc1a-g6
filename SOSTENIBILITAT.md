@@ -179,7 +179,7 @@ A més, el disseny contempla la futura integració de fonts d’energia renovabl
 \]
 
 \[
-= 7.2 + 5.9 + 0.8 + 1.0 + 24.0 + 0.1 = \mathbf{39.0\ g\ CO₂eq/kWh}
+= 7.2 + 5.9 + 0.8 + 1.0 + 24.0 + 0.1= 39.0 g CO₂eq/kWh
 \]
 
 > **Nota:** Es fa servir un valor conservador de **35.3 g CO₂/kWh**, segons dades verificades de l’**IESO (Independent Electricity System Operator, 2024)**.
@@ -200,14 +200,15 @@ A més, el disseny contempla la futura integració de fonts d’energia renovabl
 ## Emissions per Usuari (Streaming)
 
 - **Total usuaris concurrents:** 50.000
+
 - **Petjada per usuari/any:**  
   \[
-  \frac{113.2\ \text{t CO₂eq}}{50,000\ \text{usuaris}} = 2.26\ \text{kg CO₂eq/usuari/any}
+  \frac{113.2\ \text{t CO₂eq} \times 1.000}{50.000\ \text{usuaris}} = \frac{113.200\ \text{kg CO₂eq}}{50.000} = 2.264\ \text{kg CO₂eq/usuari/any}
   \]
 
 - **Petjada per usuari/dia:**  
   \[
-  \frac{2.26\ \text{kg}}{365\ \text{dies}} ≈ 6.2\ \text{g CO₂eq/usuari/dia}
+  \frac{2.264\ \text{kg}}{365\ \text{dies}} \approx 0.0062\ \text{kg} = 6.2\ \text{g CO₂eq/usuari/dia}
   \]
 
 # 4.3 Proposta de Mesures de Reducció i Optimització
