@@ -174,7 +174,7 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 
 # Resum Emissions Anuals
 
-## Petjada de Carboni Total
+## 4.2 Petjada de Carboni Total
 
 | Tipus d’Emissió       | Emissions (t CO₂eq/any) |
 |------------------------|--------------------------|
@@ -202,44 +202,73 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 
 ## Composició Energètica per Franja Horària (Ontario, 2024)
 
-### 00:00 – 06:00 (Demanda baixa)
-
-- **Nuclear:** 68% (constant baseload)
-- **Hidroelèctrica:** 22% (regulated flow)
-- **Eòlica:** 8% (variable, pic nocturn)
-- **Gas Natural:** 2% (ús mínim per demanda)
-- **Factor mitjà d’emissió:** **22.1 g CO₂/kWh**
-
----
-
-### 06:00 – 12:00 (Rampa matutina)
-
-- **Nuclear:** 58%
-- **Hidroelèctrica:** 25%
-- **Gas Natural:** 12% (peak matutí)
-- **Eòlica:** 5%
-- **Factor mitjà d’emissió:** **35.3 g CO₂/kWh**
+| Franja Horària     | Nuclear | Hidroelèctrica | Gas Natural | Eòlica | Factor mitjà d’emissió (g CO₂/kWh) |
+|--------------------|---------|----------------|-------------|--------|------------------------------------|
+| 00:00 – 06:00      | 68%     | 22%            | 2%          | 8%     | 22.1                               |
+| 06:00 – 12:00      | 58%     | 25%            | 12%         | 5%     | 35.3                               |
+| 12:00 – 18:00      | 52%     | 15%            | 28%         | 5%     | 45.7                               |
+| 18:00 – 24:00      | 55%     | 18%            | 25%         | 2%     | 42.1                               |
 
 ---
 
-### 12:00 – 18:00 (Demanda pic)
+## Mesures Proposades
 
-- **Nuclear:** 52%
-- **Gas Natural:** 28% (major consum per pic)
-- **Hidroelèctrica:** 15%
-- **Eòlica:** 5%
-- **Factor mitjà d’emissió:** **45.7 g CO₂/kWh**
+### 1. **Reducció d’hores de funcionament en franges de major emissió**
+
+- **Estrategia:** Programar les tasques més intensives energèticament (processos batch, còpies de seguretat, grans càlculs, actualitzacions) durant la nit (00:00 – 06:00), on el factor d’emissió és més baix (22.1 g CO₂/kWh).
+- **Benefici:** Reduir l’impacte de la potència consumida quan la generació depèn més del gas natural (major emissió).
 
 ---
 
-### 18:00 – 24:00 (Pic vespre)
+### 2. **Implementar un sistema de planificació energètica intel·ligent**
 
-- **Nuclear:** 55%
-- **Gas Natural:** 25%
-- **Hidroelèctrica:** 18%
-- **Eòlica:** 2%
-- **Factor mitjà d’emissió:** **42.1 g CO₂/kWh**
+- Utilitzar eines d’automatització que ajustin la càrrega del CPD i altres sistemes segons la disponibilitat d’energia renovable o la reducció del factor d’emissió.
+- Per exemple, limitar algunes càrregues durant el pic de tarda (12:00 – 18:00) i prioritzar-les en les hores nocturnes.
 
+---
+
+### 3. **Utilitzar serveis al núvol amb certificació d’energia renovable**
+
+- Migrar serveis o dades a centres de dades ubicats en regions on la composició energètica sigui més neta o que tinguin un compromís alt amb energies renovables.
+- Exemple: optar per regions que utilitzin majoritàriament hidroelectricitat o energia eòlica, i amb certificacions d’energia verda (RECs, Green Power).
+
+---
+
+### 4. **Instal·lació i ús de sistemes d’energia renovable local**
+
+- Complementar el consum amb plaques solars o energia eòlica pròpia.
+- Emmagatzematge d’energia per utilitzar-la preferentment durant les hores de major emissió de la xarxa.
+
+---
+
+### 5. **Optimització del sistema de refrigeració**
+
+- Fer servir tècniques de **free cooling** i sistemes d’alta eficiència per reduir la càrrega elèctrica.
+- Programar refrigeració addicional en hores de baixa emissió i optimitzar la temperatura per a un consum més eficient.
+
+---
+
+### 6. **Monitoratge i reporting en temps real**
+
+- Implementar sistemes de monitoratge energètic que mostrin la composició energètica i emissions en temps real.
+- Utilitzar aquesta informació per prendre decisions operatives i ajustar processos.
+
+---
+
+### 7. **Sensibilització i formació**
+
+- Educar a l’equip per conscienciar sobre la importància d’usar energia eficientment i en horaris òptims.
+- Crear protocols interns per a la gestió energètica sostenible.
+
+---
+
+## Beneficis Esperats
+
+- Reducció significativa de la petjada de carboni i ecològica del CPD.
+- Major eficiència en la gestió energètica i menor cost operatiu.
+- Posicionament com a empresa compromesa amb la sostenibilitat i la innovació.
+
+---
 
 ## Sistema d'Alimentació Ininterrompuda (SAI)
 
