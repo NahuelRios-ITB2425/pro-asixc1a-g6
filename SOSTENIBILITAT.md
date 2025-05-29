@@ -92,6 +92,14 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 
 # 4.1 Petjada ecologica del CPD
 
+### Petjada ecològica del CPD
+
+El Centre de Processament de Dades (CPD) comporta un impacte ambiental derivat del seu elevat consum elèctric continu. No obstant això, en estar ubicat a Ontario (Canadà), una regió on la generació elèctrica prové majoritàriament d’energia **hidroelèctrica i nuclear**, les emissions de CO₂ per kWh són molt baixes en comparació amb altres països.
+
+Tot i així, el funcionament 24/7 del CPD implica desenes de tones anuals de CO₂ equivalents. Per minimitzar aquest impacte, s’han implementat mesures d’eficiència energètica com el **free cooling**, equips amb certificació **80+ Titanium**, **UPS d’alta eficiència** i gestió intel·ligent amb **BMS**.
+
+A més, el disseny contempla la futura integració de fonts d’energia renovable i mecanismes de compensació de carboni, reforçant el compromís amb la sostenibilitat i les millors pràctiques mediambientals.
+
 
 # 4.2.1 Càlcul del Consum Total i Factor d'Eficiència
 
