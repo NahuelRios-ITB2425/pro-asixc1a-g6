@@ -57,6 +57,34 @@ Aquesta seria l'estructura dels 6 racks:
 
 ![6 Racks](./images/6racks.png)
 
+## Infraestructura IT
+
+## Infraestructura IT
+
+### RACK 1 - STREAMING ÀUDIO/VÍDEO
+
+Aquest rack està optimitzat per streaming d'alt rendiment, amb 8 servidors Dell R750xs dotats de GPUs NVIDIA T4 per a transcodificació en temps real. Cada un ofereix emmagatzematge NVMe en RAID 1, assegurant velocitat i redundància. La biblioteca de continguts s'allotja en una unitat Dell PowerStore de 200TB, sense necessitat de backup per ser contingut recuperable. Dos balancejadors F5 en alta disponibilitat gestionen el tràfic entrant. En conjunt, aquest rack ofereix potència computacional i rendiment de xarxa per a fluxos d'àudio i vídeo exigents.
+
+### RACK 2 - BBDD/BACKUPS/CUPS
+
+Dissenyat per a bases de dades crítiques i emmagatzematge de backups, aquest rack conté un clúster PostgreSQL distribuït sobre tres servidors amb 230TB útils en total. El backup principal es realitza en un sistema PowerProtect amb deduplicació avançada, aconseguint fins a 648TB lògics de retenció local per 2 mesos. També inclou una llibreria LTO-9 per a arxivat a llarg termini, gestionat mitjançant un servidor Veeam dedicat. Un servidor CUPS gestiona impressions per a 500 empleats. Aquest rack és essencial per a la resistència i gestió centralitzada de les dades empresarials.
+
+### RACK 3 - FIREWALL/IDS
+
+Dedicat a la seguretat perimetral i visibilitat de xarxa, aquest rack inclou firewalls Cisco Firepower que protegeixen el tràfic extern amb fins a 50 Gbps. Quatre servidors Dell amb Suricata s'encarreguen de la detecció d'intrusions i anàlisi de paquets. A més, dos routers Cisco ASR ofereixen connectivitat WAN de fins a 400 Gbps, suportant la columna vertebral de la xarxa. Un switch Cisco Nexus tanca el conjunt com a nucli de xarxa. Aquest rack és la primera línia de defensa davant amenaces externes.
+
+### RACK 4 - SERVIDORS WEB
+
+Aquest rack allotja aplicacions web crítiques en sis servidors Dell R650, complementats per dos nodes de caché Redis d'alta memòria que milloren el rendiment de resposta. Un balancejador F5 gestiona les peticions distribuint-les eficientment. Un segon switch core Cisco assegura redundància a nivell de xarxa. Amb baix ús d'espai (13U), aquest rack ofereix escalabilitat i alta disponibilitat per a serveis web.
+
+### RACK 5 - MONITORATGE
+
+El monitoratge centralitzat es gestiona en aquest rack, combinant servidors R740xd per a recol·lecció històrica via Zabbix, un servidor R550 amb visualització Grafana i GPU Quadro, i un node ELK stack per a l'anàlisi de logs. Amb només 7U ocupades, aquest rack concentra eines clau d'observabilitat i anàlisi, garantint control operacional continu i proactiu sobre tota la infraestructura.
+
+### RACK 6 - DNS/DHCP EMPLEATS
+
+Aquest rack suporta serveis essencials de xarxa interna com a resolució DNS, assignació d'adreces IP via DHCP i navegació a través d'un clúster de proxies Squid. Els servidors R550 i R350 asseguren redundància i rapidesa en els serveis DNS/DHCP per a 500 empleats. Els proxies amb 61TB d'emmagatzematge total permeten caching eficient del tràfic web intern. És un rack vital per a l'experiència diària dels usuaris i l'administració de l'entorn LAN.
+
 ## Infraestructura Electrica
 
 ### Sistema d'Alimentació Ininterrompuda (SAI)
@@ -261,29 +289,3 @@ La estratègia de backups consistirà en:
 
 - **Servidor BBDD i backups**: Utilitzarem un **RAID-6** en lloc d'un RAID-5, perquè encara que sigui menys econòmic, el RAID-6 és més segur
 - **Altres servidors**: Simplement apliquem un **RAID-1**
-
-## Infraestructura IT
-
-### RACK 1 - STREAMING ÀUDIO/VÍDEO
-
-Aquest rack està optimitzat per streaming d'alt rendiment, amb 8 servidors Dell R750xs dotats de GPUs NVIDIA T4 per a transcodificació en temps real. Cada un ofereix emmagatzematge NVMe en RAID 1, assegurant velocitat i redundància. La biblioteca de continguts s'allotja en una unitat Dell PowerStore de 200TB, sense necessitat de backup per ser contingut recuperable. Dos balancejadors F5 en alta disponibilitat gestionen el tràfic entrant. En conjunt, aquest rack ofereix potència computacional i rendiment de xarxa per a fluxos d'àudio i vídeo exigents.
-
-### RACK 2 - BBDD/BACKUPS/CUPS
-
-Dissenyat per a bases de dades crítiques i emmagatzematge de backups, aquest rack conté un clúster PostgreSQL distribuït sobre tres servidors amb 230TB útils en total. El backup principal es realitza en un sistema PowerProtect amb deduplicació avançada, aconseguint fins a 648TB lògics de retenció local per 2 mesos. També inclou una llibreria LTO-9 per a arxivat a llarg termini, gestionat mitjançant un servidor Veeam dedicat. Un servidor CUPS gestiona impressions per a 500 empleats. Aquest rack és essencial per a la resistència i gestió centralitzada de les dades empresarials.
-
-### RACK 3 - FIREWALL/IDS
-
-Dedicat a la seguretat perimetral i visibilitat de xarxa, aquest rack inclou firewalls Cisco Firepower que protegeixen el tràfic extern amb fins a 50 Gbps. Quatre servidors Dell amb Suricata s'encarreguen de la detecció d'intrusions i anàlisi de paquets. A més, dos routers Cisco ASR ofereixen connectivitat WAN de fins a 400 Gbps, suportant la columna vertebral de la xarxa. Un switch Cisco Nexus tanca el conjunt com a nucli de xarxa. Aquest rack és la primera línia de defensa davant amenaces externes.
-
-### RACK 4 - SERVIDORS WEB
-
-Aquest rack allotja aplicacions web crítiques en sis servidors Dell R650, complementats per dos nodes de caché Redis d'alta memòria que milloren el rendiment de resposta. Un balancejador F5 gestiona les peticions distribuint-les eficientment. Un segon switch core Cisco assegura redundància a nivell de xarxa. Amb baix ús d'espai (13U), aquest rack ofereix escalabilitat i alta disponibilitat per a serveis web.
-
-### RACK 5 - MONITORATGE
-
-El monitoratge centralitzat es gestiona en aquest rack, combinant servidors R740xd per a recol·lecció històrica via Zabbix, un servidor R550 amb visualització Grafana i GPU Quadro, i un node ELK stack per a l'anàlisi de logs. Amb només 7U ocupades, aquest rack concentra eines clau d'observabilitat i anàlisi, garantint control operacional continu i proactiu sobre tota la infraestructura.
-
-### RACK 6 - DNS/DHCP EMPLEATS
-
-Aquest rack suporta serveis essencials de xarxa interna com a resolució DNS, assignació d'adreces IP via DHCP i navegació a través d'un clúster de proxies Squid. Els servidors R550 i R350 asseguren redundància i rapidesa en els serveis DNS/DHCP per a 500 empleats. Els proxies amb 61TB d'emmagatzematge total permeten caching eficient del tràfic web intern. És un rack vital per a l'experiència diària dels usuaris i l'administració de l'entorn LAN.
