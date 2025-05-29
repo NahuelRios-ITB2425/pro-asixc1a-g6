@@ -29,4 +29,4 @@ I això és el que hem posat en la màquina client:
 
 Finalment, veiem la reproducció en stream desde el navegador:
 
-![Captura stream](./images/reproducciostream.png)
+![Captura stream](./images/reporducciostream.png)
