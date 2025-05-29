@@ -28,3 +28,5 @@ Es tracta d'un script de shell preparat per a realitzar còpies de seguretat aut
 ## Conclusió
 Amb aquesta estructura modular de scripts, s’assegura una gestió ordenada, segura i escalable de la base de dades. Tots els processos, des de la creació inicial fins a l’anàlisi avançada i la protecció de dades, estan coberts de manera eficient.
 
+#### Aquests serien els resultats de la BDDD:
+
