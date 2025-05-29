@@ -255,8 +255,6 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 - **Monitoratge remot:** SNMP amb targeta Vertiv IntelliSlot  
 - **Configuració:** Repartiment de càrrega actiu-actiu  
 
-**Enllaç:** Vertiv Liebert APM 200kVA
-
 ---
 
 ### Càlcul detallat d'autonomia
