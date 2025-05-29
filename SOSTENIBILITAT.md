@@ -202,14 +202,10 @@ A més, el disseny contempla la futura integració de fonts d’energia renovabl
 - **Total usuaris concurrents:** 50.000
 
 - **Petjada per usuari/any:**  
-  \[
-  \frac{113.2\ \text{t CO₂eq} \times 1.000}{50.000\ \text{usuaris}} = \frac{113.200\ \text{kg CO₂eq}}{50.000} = 2.264\ \text{kg CO₂eq/usuari/any}
-  \]
+  113.2 t CO₂eq × 1.000 / 50.000 usuaris = 113.200 kg CO₂eq / 50.000 = **2,264 kg CO₂eq/usuari/any**
 
 - **Petjada per usuari/dia:**  
-  \[
-  \frac{2.264\ \text{kg}}{365\ \text{dies}} \approx 0.0062\ \text{kg} = 6.2\ \text{g CO₂eq/usuari/dia}
-  \]
+  2.264 kg / 365 dies ≈ 0.0062 kg = **6,2 g CO₂eq/usuari/dia**
 
 # 4.3 Proposta de Mesures de Reducció i Optimització
 
