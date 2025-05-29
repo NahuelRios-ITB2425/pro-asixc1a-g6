@@ -30,3 +30,12 @@ Amb aquesta estructura modular de scripts, s’assegura una gestió ordenada, se
 
 #### Aquests serien els resultats de la BDDD:
 
+![Captura demostració 1](./images/resultatbbdd1.png)
+
+---
+
+![Captura demostració 2](./images/resultatbbdd2.png)
+
+---
+
+![Captura demostració 3](./images/resultatbbdd3.png)
