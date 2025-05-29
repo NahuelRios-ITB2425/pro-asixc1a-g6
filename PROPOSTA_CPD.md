@@ -314,6 +314,44 @@ La estratègia de backups consistirà en:
 
 ## SERVEIS IMPLEMENTATS AL CPD EN CLOUD (AWS)
 
+### SERVEIS IMPLEMENTATS AL CPD EN CLOUD (AWS)
+
+Aquest sistema ens permet **centralitzar tota la informació d'auditoria**, facilitant-ne l'anàlisi, la detecció d'anomalies i la gestió dels registres en un únic lloc.
+
+### Servidor d'Àudio / Vídeo (Servidor 1)
+
+Hem configurat un **servidor d'àudio/vídeo** utilitzant **Icecast**, **Darkice** i **FFmpeg**. Aquesta configuració ens permet **emetre i retransmetre contingut d'àudio i vídeo en directe**, així com **processar i manipular diferents formats multimèdia** per a la seva difusió.
+
+### Base de Dades (BBDD) (Servidor 2)
+
+Hem utilitzat **MySQL** com el nostre **sistema de gestió de bases de dades**. Aquesta base de dades ens permet **emmagatzemar i organitzar de manera estructurada** tota la informació necessària per al funcionament de les nostres aplicacions, assegurant la **integritat i disponibilitat de les dades**.
+
+### Firewall (Servidor 3)
+
+Hem implementat un **Firewall** utilitzant **Firewalld**. Aquest servei ens permet **controlar el trànsit de xarxa**, **filtrar connexions no desitjades** i **protegir els nostres sistemes** d'accessos no autoritzats, enfortint la seguretat perimetral de la nostra infraestructura.
+
+### IDS (Servidor 3)
+
+Per a la **detecció d'intrusions**, hem configurat **Fail2Ban**. Aquest servei ens permet **monitoritzar els registres del sistema** en cerca de patrons d'atac, com intents fallits d'inici de sessió, i **bloquejar automàticament les adreces IP malicioses**, millorant la seguretat contra atacs de força bruta i denegació de servei.
+
+### Servidor Web (Servidor 4)
+
+Hem desplegat un **servidor web** amb **Nginx** i **DuckDNS**. Aquest servei ens permet **allotjar i servir el nostre lloc web** de manera eficient i segura, mentre que **DuckDNS** ens facilita la **gestió d'un nom de domini dinàmic** per accedir al servidor.
+
+### Servei d’Auditoria (Servidor 5)
+
+Per garantir un control eficaç de l’activitat dels nostres sistemes, hem implementat un **servei d’auditoria centralitzat** amb **Auditbeat**. Aquesta solució ens permet **monitorar esdeveniments en temps real** i **reforçar la seguretat** de la nostra infraestructura.
+
+Disposem d’un **servidor d’auditoria dedicat**, on tenim instal·lats els següents components:
+
+- **Elasticsearch**: per indexar i emmagatzemar les dades.
+- **Kibana**: per visualitzar informes des d’una interfície gràfica.
+- **Auditbeat**: per recollir i enviar esdeveniments.
+
+Als **servidors auditats**, només s’instal·la **Auditbeat** amb una configuració que els permet **enviar dades al servidor central**.
+
+Aquest sistema ens permet **centralitzar tota la informació d’auditoria**, facilitant-ne **l’anàlisi**, la **detecció d’anomalies** i la **gestió dels registres** en un únic lloc.
+
 ---
 
 ## COMPARACIÓ EFICIÈNCIA ENERGÈTICA
