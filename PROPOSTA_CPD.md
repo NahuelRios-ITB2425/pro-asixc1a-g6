@@ -287,3 +287,26 @@ La estratègia de backups consistirà en:
 
 - **Servidor BBDD i backups**: Utilitzarem un **RAID-6** en lloc d'un RAID-5, perquè encara que sigui menys econòmic, el RAID-6 és més segur
 - **Altres servidors**: Simplement apliquem un **RAID-1**
+
+## RRLL al CPD
+
+### RISCOS PRINCIPALS
+
+- **Elèctrics:** Electrocució, cremades, incendis per altes tensions i cablejat.
+- **Incendi i explosió:** Sobreescalfament d'equips, materials combustibles.
+- **Físics:** Soroll, vibracions, temperatures extremes, il·luminació deficient.
+- **Ergonomics:** Postures forçades, treball amb pantalles, moviments repetitius.
+- **Seguretat:** Caigudes, cops, talls, atrapaments.
+- **Químics:** Productes de neteja, fuites de gasos refrigerants.
+- **Psicosocials:** Estrès, treball a torns.
+
+### MESURES DE PREVENCIÓ CLAU
+
+- **Elèctriques:** Instal·lacions segures, procediments de bloqueig (LOTO), formació i EPIs aïllants.
+- **Incendis:** Sistemes de detecció i extinció, plans d'emergència i evacuació, manteniment preventiu.
+- **Físics:** Aïllament acústic, control de temperatura i humitat, il·luminació adequada, EPIs per a soroll.
+- **Ergonòmics:** Mobiliari i eines adequades, formació en manipulació de càrregues, pauses.
+- **Seguretat:** Senyalització, ordre i neteja, superfícies antilliscants, proteccions en equips.
+- **Químics:** Emmagatzematge segur, ventilació, EPIs.
+- **Psicosocials:** Distribució equitativa de la càrrega de treball, suport psicosocial.
+
