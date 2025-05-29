@@ -312,6 +312,10 @@ La estratègia de backups consistirà en:
 
 ---
 
+## SERVEIS IMPLEMENTATS AL CPD EN CLOUD (AWS)
+
+---
+
 ## COMPARACIÓ EFICIÈNCIA ENERGÈTICA
 
 ### Amazon Web Services (AWS)
