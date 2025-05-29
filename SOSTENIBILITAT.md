@@ -199,7 +199,7 @@ A més, el disseny contempla la futura integració de fonts d’energia renovabl
 
 ## Emissions per Usuari (Streaming)
 
-- **Total usuaris:** 50.000
+- **Total usuaris concurrents:** 50.000
 - **Petjada per usuari/any:**  
   \[
   \frac{113.2\ \text{t CO₂eq}}{50,000\ \text{usuaris}} = 2.26\ \text{kg CO₂eq/usuari/any}
