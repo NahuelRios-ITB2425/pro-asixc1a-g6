@@ -49,7 +49,7 @@ Utilitzarem parets, sòls i sostres tècnics per fer una sala dins de la unitat 
 
 Aquest és el disseny de la sala:
 
-![Diseny de la sala(./images/sala.png)
+![Diseny de la sala](./images/sala.png)
 
 ### Estructura dels Racks
 
