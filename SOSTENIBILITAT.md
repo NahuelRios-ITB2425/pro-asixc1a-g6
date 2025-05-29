@@ -268,4 +268,3 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 - Reducció significativa de la petjada de carboni i ecològica del CPD.
 - Major eficiència en la gestió energètica i menor cost operatiu.
 - Posicionament com a empresa compromesa amb la sostenibilitat i la innovació.
-- 
