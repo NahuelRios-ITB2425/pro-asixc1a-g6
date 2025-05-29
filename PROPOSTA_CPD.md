@@ -59,8 +59,6 @@ Aquesta seria l'estructura dels 6 racks:
 
 ## Infraestructura IT
 
-## Infraestructura IT
-
 ### RACK 1 - STREAMING ÀUDIO/VÍDEO
 
 Aquest rack està optimitzat per streaming d'alt rendiment, amb 8 servidors Dell R750xs dotats de GPUs NVIDIA T4 per a transcodificació en temps real. Cada un ofereix emmagatzematge NVMe en RAID 1, assegurant velocitat i redundància. La biblioteca de continguts s'allotja en una unitat Dell PowerStore de 200TB, sense necessitat de backup per ser contingut recuperable. Dos balancejadors F5 en alta disponibilitat gestionen el tràfic entrant. En conjunt, aquest rack ofereix potència computacional i rendiment de xarxa per a fluxos d'àudio i vídeo exigents.
