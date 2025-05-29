@@ -6,6 +6,9 @@ Un cop configurats els serveis, hem pogut comprovar el correcte funcionament del
 Aquí ho podem veure:
 
 ![Captura interfície Icecast](./images/icecast.png)
+
+---
+
 ![Captura interfície Icecast](./images/icecast2.png)
 
 Per poder fer streaming de vídeo hem instal·lat el programari FFmpeg, que llavors mitjançant la comanda:
@@ -23,3 +26,7 @@ Aquí les captures de demostració:
 I això és el que hem posat en la màquina client:
 
 ![Captura demostració 2](./images/ampladadebanda2.png)
+
+Finalment, veiem la reproducció en stream desde el navegador:
+
+![Captura stream](./images/reproducciostream.png)
