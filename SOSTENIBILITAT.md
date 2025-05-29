@@ -89,7 +89,7 @@ El CPD es troba al **Canadà**, on la temperatura és força baixa. Podem aprofi
 - **Total:** **4–6 TWh**
 
 ---
-## 5.3.3 Càlcul del Consum Total i Factor d'Eficiència
+## Càlcul del Consum Total i Factor d'Eficiència
 
 ### Consums Energètics Verificats per Categoria
 
