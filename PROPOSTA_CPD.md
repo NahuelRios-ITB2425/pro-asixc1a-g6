@@ -310,3 +310,61 @@ La estratègia de backups consistirà en:
 - **Químics:** Emmagatzematge segur, ventilació, EPIs.
 - **Psicosocials:** Distribució equitativa de la càrrega de treball, suport psicosocial.
 
+---
+
+## COMPARACIÓ EFICIÈNCIA ENERGÈTICA
+
+### Amazon Web Services (AWS)
+
+**EFICIÈNCIA ENERGÈTICA AWS:**
+- PUE mitjà: 1,135 (dades de 2023)
+- Millora anual: 4,2% de millora interanual
+- Energia renovable: Compromís del 90% per al 2025
+- Carboni neutral: Objectiu de zero emissions per al 2040
+- Renovables actuals: 90% de la infraestructura global
+
+**EFICIÈNCIA D'INFRAESTRUCTURA:**
+- Utilització de servidors: Mitjana del 65% (vs 15% en empreses)
+- Refrigeració: HVAC optimitzat amb aprenentatge automàtic
+- Distribució elèctrica: Disseny amb disponibilitat del 99,99%
+- Geografia: 99 zones de disponibilitat arreu del món
+
+**INICIATIVES DE SOSTENIBILITAT:**
+- Climate Pledge: Zero emissions de carboni per al 2040
+- Projectes renovables: Capacitat contractada de més de 20 GW
+- Innovació: Refrigeració líquida + emmagatzematge gravitacional
+- Programes de compensació: Reforestació + inversions en renovables
+
+**EFICIÈNCIA DE COSTOS AL CANADÀ:**
+- Economia d’escala: 29% més rendible en comparació amb gestió pròpia
+- Sense sobreprovisionament: Model de pagament segons creixement
+- Preus regionals: Tarifes competitives a Canada Central
+- Instàncies reservades: Fins al 72% de descompte a llarg termini
+
+### Microsoft Azure
+
+**EFICIÈNCIA ENERGÈTICA AZURE:**
+- PUE mitjà: 1,125 (líder en el sector el 2023)
+- Ús d’aigua: Reducció del 95% en comparació amb la mitjana del sector
+- Energia renovable: Objectiu del 100% per al 2025
+- Carboni negatiu: Compromís assolible per al 2030
+- Cadena de subministrament: Neutralitat de carboni per al 2030
+
+**INNOVACIONS TÈCNIQUES:**
+- Centres de dades submarins: Eficiència del Projecte Natick
+- Refrigeració amb IA: Reducció del 15-20% en energia
+- Silici personalitzat: Maquinari optimitzat per Azure
+- Immersió líquida: Estalvi energètic addicional del 5-15%
+
+**LIDERATGE EN ECONOMIA CIRCULAR:**
+- Vida útil dels servidors: Ampliada a més de 6 anys vs 4 habituals
+- Reutilització de components: 78% dels components de servidor reutilitzats
+- Zero residus: Objectiu d’eliminació d’abocaments per al 2030
+- Materials sostenibles: Enfocament en materials biobasats i reciclables
+
+**PRESÈNCIA AL CANADÀ:**
+- Canada Central: Regió de Toronto optimitzada
+- Canada East: Regió del Quebec (94% d’energia hidroelèctrica)
+- Latència: <5
+
+
